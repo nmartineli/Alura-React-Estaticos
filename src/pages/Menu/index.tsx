@@ -4,6 +4,7 @@ import Search from './Search';
 import { useState } from 'react';
 import Filter from './Filter';
 import Selector from './Selector';
+import Itens from './Itens';
 
 export default function Menu() {
 	const [search, setSearch] = useState('');
@@ -25,6 +26,7 @@ export default function Menu() {
 					<Filter filter={filter} setFilter={setFilter} />
 					<Selector selector={selector} setSelector={setSelector} />
 				</div>
+				<Itens />
 			</section>
 		</main>
 	);
